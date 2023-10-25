@@ -1,9 +1,13 @@
-/*
-var contador = document.querySelector('p#contador');
-contador.addEventListener('click', clicou)
+let contador = 0;
+let res = document.querySelector('section#result');
+
 
 function clicou(){
-        
-    contador.innerText = (`O contador está com ${contador}`)
+    contador ++;
+    res.innerHTML = (`O contador está com <mark>${contador}</mark> cliques.`);
 }
-*/
+
+function zerou(){
+    contador = 0;
+    res.innerHTML = (`O contador está com <mark>${contador}</mark> cliques.`);
+}
